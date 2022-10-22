@@ -1,4 +1,6 @@
 from Torre import Torre
+from Disco import Disco
+
 
 class Hanoi:
     def __int__(self):
