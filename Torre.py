@@ -19,4 +19,4 @@ class Torre:
         return self._discos == []
 
     def primeiro_disco(self):
-        return  self._discos[len(self._discos) - 1]
+        return self._discos[len(self._discos) - 1]

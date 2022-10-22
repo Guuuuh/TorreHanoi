@@ -30,7 +30,6 @@ if __name__ == '__main__':
 
     hanoi = Hanoi()
 
-    hanoi.retira_disco_da_torre(torre1)
-    hanoi.insere_disco_na_torre(torre2)
+    hanoi.transfere_disco_de_torre()
 
     torre1.exibe_discos_torre()
