@@ -16,15 +16,14 @@ disco6 = Disco(6)
 disco7 = Disco(7)
 disco8 = Disco(8)
 
-quantidade_discos = int(input("Com quantos discos deseja jogar? (min:3 max:8)"))
-
 
 def menu():
+    quantidade_discos = int(input("Com quantos discos deseja jogar? (min:3 max:8)"))
     if quantidade_discos < 3 or quantidade_discos > 8:
         print("Quantidade inválida, favor inserir a quantidade correta para jogar!")
-    else:
-        for i in range(quantidade_discos):
-            torre1.empilha_disco(disco[i])
+
+    for i in range(1, quantidade_discos + 1):
+        torre1.empilha_disco(Disco[i])
 
 
 if __name__ == '__main__':

@@ -11,7 +11,7 @@ class Torre:
 
     def exibe_discos_torre(self):
         for disco in self._discos:
-            print(disco.get_tamanho())
+            print("Torre : " + str(self._id), "\nDisco: ", disco.get_tamanho(), "\n")
 
     def torre_vazia(self):
         return self._discos == []
