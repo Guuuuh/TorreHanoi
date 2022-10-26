@@ -3,11 +3,14 @@ class Torre:
         self._id = id
         self._discos = []
 
+    def get_id(self):
+        return self._id
+
     def empilha_disco(self, disco):
         self._discos.append(disco)
 
     def desempilha_disco(self):
-        return self._discos.pop()
+        return self._discos.pop(0)
 
     def exibe_discos_torre(self):
         for disco in self._discos:
