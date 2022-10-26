@@ -16,14 +16,13 @@ def menu():
         print("Quantidade inválida, favor inserir a quantidade correta para jogar!")
 
     for i in range(1, quantidade_discos + 1):
-        torre1.empilha_disco(Disco(i))
+        torre1.primeiro_empilhamento(Disco(i))
 
     torre1.exibe_discos_torre()
     while True:
-        if len(torre3) == quantidade_discos:
-            break
-
         seleciona_torre()
+
+
 
 
 
@@ -49,6 +48,9 @@ def seleciona_torre():
         print("Torre inválida! insira 1, 2 ou 3 para selecionar a torre")
 
     hanoi.transfere_disco_de_torre(torre_origem, torre_destino)
+    torre1.exibe_discos_torre()
+    torre2.exibe_discos_torre()
+    torre3.exibe_discos_torre()
 
 
 if __name__ == '__main__':

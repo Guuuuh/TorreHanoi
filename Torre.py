@@ -6,8 +6,11 @@ class Torre:
     def get_id(self):
         return self._id
 
-    def empilha_disco(self, disco):
+    def primeiro_empilhamento(self, disco):
         self._discos.append(disco)
+
+    def empilha_disco(self, disco):
+        self._discos.insert(0, disco)
 
     def desempilha_disco(self):
         return self._discos.pop(0)
@@ -17,6 +20,7 @@ class Torre:
 
         for disco in self._discos:
             print("Disco: ", disco.get_tamanho())
+        print("----------------------")
 
     def torre_vazia(self):
         return self._discos == []
