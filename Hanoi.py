@@ -12,7 +12,10 @@ class Hanoi:
 
         disco_armazenado = Torre.desempilha_disco(torre_origem)
         disco_tamanho = Disco.get_tamanho(disco_armazenado)
-        primeiro_disco_torre_destino = Disco.get_tamanho(Torre.primeiro_disco_da_torre(torre_destino))
-
-        if disco_tamanho < primeiro_disco_torre_destino or Torre.torre_vazia(torre_destino):
+        if Torre.torre_vazia(torre_destino):
             torre_destino.empilha_disco(disco_armazenado)
+        else:
+            primeiro_disco_torre_destino = Disco.get_tamanho(Torre.primeiro_disco_da_torre(torre_destino))
+            if disco_tamanho < primeiro_disco_torre_destino:
+                torre_destino.empilha_disco(disco_armazenado)
+            print("Movimento inválido")

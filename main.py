@@ -6,7 +6,7 @@ torre1 = Torre(1)
 torre2 = Torre(2)
 torre3 = Torre(3)
 
-hanoi = Hanoi
+hanoi = Hanoi()
 
 
 def menu():
@@ -20,6 +20,7 @@ def menu():
 
     torre1.exibe_discos_torre()
     seleciona_torre()
+    torre2.exibe_discos_torre()
 
 
 def seleciona_torre():
