@@ -19,8 +19,12 @@ def menu():
         torre1.empilha_disco(Disco(i))
 
     torre1.exibe_discos_torre()
-    seleciona_torre()
-    torre2.exibe_discos_torre()
+    while True:
+        if len(torre3) == quantidade_discos:
+            break
+
+        seleciona_torre()
+
 
 
 def seleciona_torre():
