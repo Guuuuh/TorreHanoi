@@ -6,6 +6,9 @@ class Torre:
     def get_id(self):
         return self._id
 
+    def get_discos(self):
+        return self._discos
+
     def primeiro_empilhamento(self, disco):
         self._discos.append(disco)
 

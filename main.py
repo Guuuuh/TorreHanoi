@@ -20,10 +20,10 @@ def menu():
 
     torre1.exibe_discos_torre()
     while True:
+        if len(torre3.get_discos()) == quantidade_discos:
+            print("Parabens!!! Jogo Concluído")
+            break
         seleciona_torre()
-
-
-
 
 
 def seleciona_torre():
